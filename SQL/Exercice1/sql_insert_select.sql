@@ -1,0 +1,7 @@
+INSERT INTO roles(label) VALUES('ROLE_USER'), ('ROLE_ADMIN');
+
+SELECT * FROM roles;
+
+SELECT id FROM test WHERE label='ROLE_USER';
+
+SELECT * FROM roles ORDER BY id DESC;
