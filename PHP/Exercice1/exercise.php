@@ -1,22 +1,26 @@
 <?php
 
-$booleanTrue;
-$booleanFalse;
+$booleanTrue = true;
+$booleanFalse = false;
 
-$int;
+$int=4354;
 
-$float;
+$float=24454.534342;
 
-$integer;
+$integer=24127142;
 
-$double;
+$double=3.844e11;
 
-$string;
+$string='hello frank';
 
-$array;
+$array=['hello', 'frank'];
 
-$doubleDimenssionArray;
+$doubleDimenssionArray = ['alpha' => [9.382536, -456.3427],'beta' => [4536.36328276, -124.23576]];
 
-$associativeArray;
 
-$null;
+
+$indexedArray = array( 'Rolex (more)', 'WG Submariner dial (only)', '116619' /* etc */ );
+$keys = array('Brand', 'Series', 'Model', /* etc */);
+$associativeArray = array_combine($keys, $indexedArray);
+
+$null=null;
