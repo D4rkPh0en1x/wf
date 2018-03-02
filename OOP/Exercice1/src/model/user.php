@@ -26,7 +26,12 @@
 namespace Model;
 
 class User{
+    /**
+     * 
+     * Documentation for the class
+     */
     private $id;
+
     protected $roles = [];
     protected $password;
     protected $salt;
@@ -78,10 +83,6 @@ class User{
     }
 
 };
-
-$dude = new User();
-echo $dude;
-
 
 
 
