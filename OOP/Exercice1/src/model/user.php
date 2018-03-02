@@ -79,6 +79,8 @@ class User{
 
 };
 
+$dude = new User();
+echo $dude;
 
 
 
