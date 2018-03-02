@@ -22,11 +22,11 @@ function arrayDivide(array $basearray, int $by) : array{
 //$basearray= array of values to divide - $by=divisor which is not allowed to be 0 - output will be an array
     $result = [];
     
-    foreach ($basearray as $base){ //for every array entry run the try
+    foreach ($basearray as $basecalculation){ //for every array entry run the try
         try {
-            $result [] = divide($base, $by); //call divide function to divide array value with the by value
+            $result [] = divide($basecalculation, $by); //call divide function to divide array value with the by value
         } catch(RuntimeException $exception) { //catch the runtimeerror - this comes when divided by 0
-            $result [] = $base; //If the divisor is zero, you must catch the exception and return the array of value, as it.
+            $result [] = $basecalculation; //If the divisor is zero, you must catch the exception and return the array of value, as it.
         }
         
     }
