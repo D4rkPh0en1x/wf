@@ -3,5 +3,9 @@
   <fixed facet="php.component"/>
   <fixed facet="php.core.component"/>
   <installed facet="php.core.component" version="1"/>
+<<<<<<< HEAD
   <installed facet="php.component" version="7.1"/>
+=======
+  <installed facet="php.component" version="7.2"/>
+>>>>>>> PHP_exercise_7
 </faceted-project>

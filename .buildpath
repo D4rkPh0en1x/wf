@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildpath>
+<<<<<<< HEAD
 	<buildpathentry kind="src" path="OOP/Exercice1"/>
 	<buildpathentry kind="src" path="OOP/Exercice2"/>
 	<buildpathentry kind="src" path="OOP/Exercice3"/>
 	<buildpathentry kind="src" path="OOP/Exercice4"/>
+=======
+>>>>>>> PHP_exercise_7
 	<buildpathentry kind="src" path="PHP/Exercice1"/>
 	<buildpathentry kind="src" path="PHP/Exercice2"/>
 	<buildpathentry kind="src" path="PHP/Exercice3"/>
@@ -12,10 +15,13 @@
 	<buildpathentry kind="src" path="PHP/Exercice5/src"/>
 	<buildpathentry kind="src" path="PHP/Exercice6"/>
 	<buildpathentry kind="src" path="PHP/Exercice7"/>
+<<<<<<< HEAD
 	<buildpathentry kind="src" path="Server/Exercice"/>
 	<buildpathentry kind="src" path="Symfony/skeleton/config"/>
 	<buildpathentry kind="src" path="Symfony/skeleton/public"/>
 	<buildpathentry kind="src" path="Symfony/skeleton/src"/>
 	<buildpathentry kind="src" path="Symfony/skeleton/tests"/>
+=======
+>>>>>>> PHP_exercise_7
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
 </buildpath>
