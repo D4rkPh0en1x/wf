@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faceted-project>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <fixed facet="php.component"/>
   <fixed facet="php.core.component"/>
+  <fixed facet="php.component"/>
   <installed facet="php.core.component" version="1"/>
-<<<<<<< HEAD
   <installed facet="php.component" version="7.1"/>
-=======
-  <installed facet="php.component" version="7.2"/>
->>>>>>> PHP_exercise_7
-=======
-  <fixed facet="php.core.component"/>
-  <fixed facet="php.component"/>
-  <installed facet="php.core.component" version="1"/>
-  <installed facet="php.component" version="7.2"/>
->>>>>>> OOP_exercise_2
-=======
-  <fixed facet="php.component"/>
-  <fixed facet="php.core.component"/>
-  <installed facet="php.core.component" version="1"/>
-  <installed facet="php.component" version="7.2"/>
->>>>>>> OOP_exercise_3
 </faceted-project>
