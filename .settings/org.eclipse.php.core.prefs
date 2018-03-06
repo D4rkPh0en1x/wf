@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 include_path=
+=======
+include_path=0;/wf
+>>>>>>> OOP_exercise_3

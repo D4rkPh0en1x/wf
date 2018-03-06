@@ -2,6 +2,7 @@
 <buildpath>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<buildpathentry kind="src" path="OOP/Exercice1"/>
 	<buildpathentry kind="src" path="OOP/Exercice2"/>
 	<buildpathentry kind="src" path="OOP/Exercice3"/>
@@ -11,6 +12,11 @@
 =======
 	<buildpathentry kind="src" path="OOP/Exercice1"/>
 >>>>>>> OOP_exercise_2
+=======
+	<buildpathentry kind="src" path="OOP/Exercice1"/>
+	<buildpathentry kind="src" path="OOP/Exercice2"/>
+	<buildpathentry kind="src" path="OOP/Exercice3"/>
+>>>>>>> OOP_exercise_3
 	<buildpathentry kind="src" path="PHP/Exercice1"/>
 	<buildpathentry kind="src" path="PHP/Exercice2"/>
 	<buildpathentry kind="src" path="PHP/Exercice3"/>
@@ -19,6 +25,7 @@
 	<buildpathentry kind="src" path="PHP/Exercice5/src"/>
 	<buildpathentry kind="src" path="PHP/Exercice6"/>
 	<buildpathentry kind="src" path="PHP/Exercice7"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	<buildpathentry kind="src" path="Server/Exercice"/>
@@ -30,5 +37,7 @@
 >>>>>>> PHP_exercise_7
 =======
 >>>>>>> OOP_exercise_2
+=======
+>>>>>>> OOP_exercise_3
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
 </buildpath>
