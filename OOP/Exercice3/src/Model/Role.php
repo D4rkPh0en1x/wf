@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 
-use Exception\NotAllowedRoleException; //we need to insert the just created class
+use Exception\NotAllowedRoleException; //we need to insert the class we created for the error exception
 
 class Role
 {
