@@ -35,6 +35,14 @@ class ComposerStaticInit7af79485b11d72d1f1391516759ce252
         array (
             'Psr\\Log\\' => 8,
         ),
+        'M' => 
+        array (
+            'Model\\' => 6,
+        ),
+        'E' => 
+        array (
+            'Exception\\' => 10,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -89,6 +97,14 @@ class ComposerStaticInit7af79485b11d72d1f1391516759ce252
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Model',
+        ),
+        'Exception\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Exception',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -97,6 +113,10 @@ class ComposerStaticInit7af79485b11d72d1f1391516759ce252
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/',
     );
 
     public static $prefixesPsr0 = array (
@@ -650,6 +670,7 @@ class ComposerStaticInit7af79485b11d72d1f1391516759ce252
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit7af79485b11d72d1f1391516759ce252::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit7af79485b11d72d1f1391516759ce252::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit7af79485b11d72d1f1391516759ce252::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit7af79485b11d72d1f1391516759ce252::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit7af79485b11d72d1f1391516759ce252::$classMap;
 

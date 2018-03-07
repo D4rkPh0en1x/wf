@@ -15,5 +15,13 @@
             "email": "frank@datateam.lu"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    
+    "autoload": {
+        	"psr-4": { 
+        	"": "",
+        	"Model\\": "Model/",
+        	"Exception\\": "Exception/"
+         }
+    }
 }
