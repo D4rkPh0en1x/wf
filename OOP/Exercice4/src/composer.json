@@ -1,0 +1,19 @@
+{
+    "name": "frank/symsec",
+    "description": "Symphony Security",
+    "type": "library",
+    "require": {
+        "symfony/security": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "license": "GNU v4",
+    "authors": [
+        {
+            "name": "D4rkPh0en1x",
+            "email": "frank@datateam.lu"
+        }
+    ],
+    "minimum-stability": "dev"
+}
