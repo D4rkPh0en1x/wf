@@ -2,3 +2,6 @@ vendor/
 .buildpath
 .project
 .settings/
+../../.buildpath
+../../.project
+../../.settings/
