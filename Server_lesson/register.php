@@ -7,12 +7,32 @@ $username = $_POST['username'] ?? null;
 $password_1 = $_POST['password_1'] ?? null;
 $password_2 = $_POST['password_2'] ?? null;
 
-echo 'Validating data - Please wait...' . "<br/>";
+echo 'Validating data - Please wait...' . "<br/><br/>";
 $usernameError = !(is_string($username) && strlen($username) > 2);
 $passwordError = !($password_1 === $password_2 && strlen($password_1) > 7);
 
 if(!($usernameError || $passwordError)) {
-    echo 'Data Validation OK -> Storing data to database' . "<br/>";
+    
+   echo 'Data Validation OK -> Storing data to database' . "<br/><br/>";
+
+   echo 'First let\'s try connecting to the database' . "<br/><br/>";
+   try{
+        $connection = new PDO('mysql:dbname=register;host=localhost', 'root', 'tx77ztfu*');
+        
+    } catch (\PDOException $exception) {
+        http_response_code(500);
+        echo 'Impossible to connect to the DB, contact the support';
+        exit(10);
+    }
+    echo 'The connection seems to work...' . "<br/><br/>";
+    
+    $sql = 'INSERT INTO user(username,password) VALUES (\"$username\", \"password_1\")';
+
+    echo '2 hours later' . "<br/><br/>";
+    
+    
+    echo 'The data is finally stored...' . "<br/><br/>";
+    
     return;
     }
 }
