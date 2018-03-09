@@ -1,3 +1,9 @@
+<?php 
+use Service\DBConnector;
+
+include __DIR__.'/init.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,10 +15,12 @@
 
 <?php
 
-$displayAccountId = $_GET['id'] ?? null;
+//$displayAccountId = $_GET['id'] ?? null;
+$displayAccountUsername = $_GET['username'] ?? null;
 
-if (!$displayAccountId || !is_numeric($displayAccountId)){
-
+//if (!$displayAccountId || !is_numeric($displayAccountId)){
+if (!$displayAccountUsername){
+    
 ?>
 <div>
 	<p>To be displayed, this page needs a valid numeric id to query the database</p>	
@@ -22,7 +30,7 @@ if (!$displayAccountId || !is_numeric($displayAccountId)){
 } else {
     
     try{
-        $connection = new PDO('mysql:dbname=register;host=localhost', 'root', 'tx77ztfu*');
+        $connection = Service\DBConnector::getConnection();
         
     } catch (PDOException $exception) {
         http_response_code(500);
@@ -30,12 +38,24 @@ if (!$displayAccountId || !is_numeric($displayAccountId)){
         exit(1);
     }
     
-    $sql = "SELECT username, password FROM user WHERE id = ".$displayAccountId;
+    // Avoid SQL injection - Examples
     
-    $resultall = $connection->query($sql); //pay attention if use exec or query
+    // $sql = 'SELECT username, password FROM user WHERE id = ?';
+    // $sql = 'SELECT * FROM user WHERE username = ?';
+    // $statement->bindParam(1, $displayAccountId);
+    // $statement->bindParam(1, $displayAccountUsername, PDO::PARAM_STR);
+    
+    $sql = 'SELECT * FROM user WHERE username = :username';
+    $statement = $connection->prepare($sql);
+
+    $statement->bindParam('username', $displayAccountUsername, PDO::PARAM_STR);
+    $statement->execute();    
+    
+    
+    // $resultall = $connection->query($sql); //pay attention if use exec or query -> unsecure
    
     //case of fetchall
-    $resultall = $resultall->fetchall();
+    $resultall = $statement->fetchall();
      
     if (empty($resultall)){
     ?>

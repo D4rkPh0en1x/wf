@@ -17,7 +17,7 @@ if(!($usernameError || $passwordError)) {
 
    echo 'First let\'s try connecting to the database' . "<br/><br/>";
    try{
-        $connection = new PDO('mysql:dbname=register;host=localhost', 'root', 'tx77ztfu*');
+       $connection = Service\DBConnector::getConnection();
         
     } catch (\PDOException $exception) {
         http_response_code(500);
