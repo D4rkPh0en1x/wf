@@ -26,10 +26,18 @@ if(!($usernameError || $passwordError)) {
     }
     echo 'The connection seems to work...' . "<br/><br/>";
     
-    //wrong way
+    //wrong but also working way - not secure!!!
     $sql = "INSERT INTO user(username,password) VALUES (\"$username\", \"$password_1\")";
-    $connection->exec($sql);
+    $affected = $connection->exec($sql);
+        
+    if (!$affected){
+        echo implode(', ', $connection->errorInfo());
+        return;
+    }
 
+    $id = $connection->lastInsertId();
+    
+    
     echo '2 hours later' . "<br/><br/>";
     
     
