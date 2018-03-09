@@ -1,7 +1,6 @@
 <?php 
-use Service\DBConnector;
 
-include __DIR__.'/init.php';
+include_once __DIR__.'/init.php';
 ?>
 
 <!DOCTYPE html>

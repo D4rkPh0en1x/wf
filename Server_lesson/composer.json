@@ -1,0 +1,19 @@
+{
+    "name": "etudiant/server_lesson",
+    "description": "xy ungel\u0000st",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "D4rkPh0en1x",
+            "email": "frank@datateam.lu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+     "psr-4": {
+     "": "src/"
+     }
+  }
+}
