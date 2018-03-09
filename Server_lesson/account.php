@@ -24,7 +24,7 @@ if (!$displayAccountId || !is_numeric($displayAccountId)){
     try{
         $connection = new PDO('mysql:dbname=register;host=localhost', 'root', 'tx77ztfu*');
         
-    } catch (\PDOException $exception) {
+    } catch (PDOException $exception) {
         http_response_code(500);
         echo 'Impossible to connect to the DB, contact the support';
         exit(1);
